@@ -24,5 +24,5 @@ Subject: Less than #{limit} free space left on #{domain}!
 TEXT
 
 if avail.to_i < limit_in_bytes
-  `echo "#{mail_body}" | exim #{to}`
+  `echo "#{mail_body}" | /usr/sbin/exim #{to}`
 end
