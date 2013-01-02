@@ -2,8 +2,8 @@
 
 device = ARGV[0] || raise("Device name required")
 limit  = ARGV[1] || raise("Space limit required")
-to     = ARGV[3] || raise("Email address required")
-domain = ARGV[4] || raise("Domain name required")
+to     = ARGV[2] || raise("Email address required")
+domain = ARGV[3] || raise("Domain name required")
 
 raise "Invalid format: #{limit}" unless limit =~ /^\d+(M|G)$/
 
